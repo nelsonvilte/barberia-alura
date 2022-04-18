@@ -1,0 +1,402 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.productos {
+  width: 100%;
+  margin: 0;
+  padding: 50px 10px;
+}
+.productos li { 
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  margin: 0 1%;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.productos li:hover {
+  border-color: #c78c19;
+}
+
+.productos li:active {
+  border-color: #088c19;
+}
+
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productos li:hover h2 {
+  font-size: 33px;
+}
+
+.prod-descripcion {
+  font-size: 18px;
+}
+
+.productos img{
+  width: 100%;
+  height: auto;
+}
+
+.prod-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: url(/img/bg.jpg);
+  padding: 40px;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px;
+}
+
+form {
+  margin: 40px 5px;
+  
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padron {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 80%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+
+.enviar {
+ 
+  width: 20%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+  transform: scale(1.1);
+}
+
+
+
+
+/* inicio CSS table*/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: bold;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,th {
+  border: none;
+  text-align: center;
+  padding: 8px 15px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* fin CSS table*/
+
+/* inicio CSS home */
+
+.banner {
+  width: 100%;
+}
+
+.principal {
+  padding: 3em 0;
+  background: #fefefe;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.tituloPrincipal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+  font-weight: bold;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.utensillos {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa p {
+  text-align: center;
+  margin: 0 0 2em;
+}
+
+.mapa-contenido {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.diferenciales {
+  background: #888888;
+  padding: 3em 0;
+}
+
+.contenidos-diferenciales {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.lista-diferenciales {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.items {
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.items::before {
+  content: "★";
+}
+
+.items:first-child {
+  font-weight: bold;
+}
+
+.imgDif {
+  width: 60%;
+  transition: 400ms;
+  box-shadow: 10px 10px 30px 10px #000000;
+}
+
+.imgDif:hover {
+  opacity: 0.3;
+}
+
+.video {
+  width: 560px;
+  padding-top: 3em;
+  margin: 2em auto;
+}
+
+/* Fin CSS home */ 
+
+/* inicio CSS contacto*/
+
+#izquierda{
+  height:50%;
+  float:left;
+  width:50%;
+}
+#derecha{
+  height:50%;
+  float:right;
+  width:50%;
+}
+
+.grupos{
+  width:100%;
+}
+/* Fin CSS contacto*/
+
+
+
+
+@media screen and (max-width: 480px) {
+h1 {
+    text-align: center;
+}
+
+nav{
+    position:static ;
+    text-align: center;
+}
+nav a {
+  
+       font-size: 15px;
+
+  }
+
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenidos-diferenciales,
+  .video {
+    width: auto;
+  }
+
+  .lista-diferenciales, .imgDif{
+      width: 100%;
+  }
+
+  .productos {
+    width: auto;
+  }  
+
+  .productos li {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #izquierda,#derecha{
+    float: none;
+    width: 100%;
+  }
+
+  .enviar{
+    width: 100%;
+  }
+
+  .tituloPrincipal {
+    
+    font-size: 1.5em;
+    
+   
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width:768px){
+
+  h1 {
+    text-align: center;
+}
+
+nav{
+  position:static ;
+  text-align: center;
+}
+
+
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenidos-diferenciales,.video{
+    width: auto;
+    margin: 0 10%;
+  }
+
+     .productos{
+    width: auto;
+    text-align: center;
+  }
+
+  .productos li {
+    display: inline-block;
+    width: 70%;
+    margin-top: 10px;
+  }
+
+  #izquierda,#derecha{
+    float: none;
+    width: 100%;
+  }
+
+  .enviar{
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:939px){
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenidos-diferenciales{
+    width: auto;
+    margin: 0 10%;
+  }
+
+}
+
