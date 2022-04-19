@@ -6,6 +6,10 @@ header {
   background-color: #bbbbbb;
   padding: 20px 0;
 }
+.img-block {
+  pointer-events: none;
+  cursor: default;
+}
 
 .caja {
   width: 940px;
@@ -41,7 +45,7 @@ nav a:hover {
   margin: 0;
   padding: 50px 10px;
 }
-.productos li { 
+.productos li {
   display: inline-block;
   text-align: center;
   width: 30%;
@@ -74,7 +78,7 @@ nav a:hover {
   font-size: 18px;
 }
 
-.productos img{
+.productos img {
   width: 100%;
   height: auto;
 }
@@ -99,7 +103,6 @@ footer {
 
 form {
   margin: 40px 5px;
-  
 }
 
 form label,
@@ -120,9 +123,7 @@ form legend {
   margin: 20px 0;
 }
 
-
 .enviar {
- 
   width: 20%;
   padding: 15px 0;
   font-size: 18px;
@@ -140,9 +141,6 @@ form legend {
   transform: scale(1.1);
 }
 
-
-
-
 /* inicio CSS table*/
 
 table {
@@ -157,7 +155,8 @@ thead {
   font-weight: bold;
 }
 
-td,th {
+td,
+th {
   border: none;
   text-align: center;
   padding: 8px 15px;
@@ -268,42 +267,37 @@ tr:nth-child(even) {
   margin: 2em auto;
 }
 
-/* Fin CSS home */ 
+/* Fin CSS home */
 
 /* inicio CSS contacto*/
 
-#izquierda{
-  height:50%;
-  float:left;
-  width:50%;
+#izquierda {
+  height: 50%;
+  float: left;
+  width: 50%;
 }
-#derecha{
-  height:50%;
-  float:right;
-  width:50%;
+#derecha {
+  height: 50%;
+  float: right;
+  width: 50%;
 }
 
-.grupos{
-  width:100%;
+.grupos {
+  width: 100%;
 }
 /* Fin CSS contacto*/
 
-
-
-
 @media screen and (max-width: 480px) {
-h1 {
+  h1 {
     text-align: center;
-}
+  }
 
-nav{
-    position:static ;
+  nav {
+    position: static;
     text-align: center;
-}
-nav a {
-  
-       font-size: 15px;
-
+  }
+  nav a {
+    font-size: 15px;
   }
 
   .caja,
@@ -314,13 +308,14 @@ nav a {
     width: auto;
   }
 
-  .lista-diferenciales, .imgDif{
-      width: 100%;
+  .lista-diferenciales,
+  .imgDif {
+    width: 100%;
   }
 
   .productos {
     width: auto;
-  }  
+  }
 
   .productos li {
     display: block;
@@ -328,46 +323,41 @@ nav a {
     margin-top: 10px;
   }
 
-  #izquierda,#derecha{
+  #izquierda,
+  #derecha {
     float: none;
     width: 100%;
   }
 
-  .enviar{
+  .enviar {
     width: 100%;
   }
 
   .tituloPrincipal {
-    
     font-size: 1.5em;
-    
-   
   }
-
-
 }
 
-@media screen and (min-width: 481px) and (max-width:768px){
-
+@media screen and (min-width: 481px) and (max-width: 768px) {
   h1 {
     text-align: center;
-}
+  }
 
-nav{
-  position:static ;
-  text-align: center;
-}
-
+  nav {
+    position: static;
+    text-align: center;
+  }
 
   .caja,
   .principal,
   .mapa-contenido,
-  .contenidos-diferenciales,.video{
+  .contenidos-diferenciales,
+  .video {
     width: auto;
     margin: 0 10%;
   }
 
-     .productos{
+  .productos {
     width: auto;
     text-align: center;
   }
@@ -378,25 +368,23 @@ nav{
     margin-top: 10px;
   }
 
-  #izquierda,#derecha{
+  #izquierda,
+  #derecha {
     float: none;
     width: 100%;
   }
 
-  .enviar{
+  .enviar {
     width: 100%;
   }
-
 }
 
-@media screen and (min-width: 768px) and (max-width:939px){
+@media screen and (min-width: 768px) and (max-width: 939px) {
   .caja,
   .principal,
   .mapa-contenido,
-  .contenidos-diferenciales{
+  .contenidos-diferenciales {
     width: auto;
     margin: 0 10%;
   }
-
 }
-
